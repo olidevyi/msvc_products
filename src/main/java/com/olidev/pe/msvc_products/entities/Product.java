@@ -22,4 +22,8 @@ public class Product {
 
     @Column(name = "create_at")
     private LocalDate createAt;
+
+    // NUEVO PARA EL BALANCEADOR DE CARGAS
+    @Transient
+    private int port;
 }
